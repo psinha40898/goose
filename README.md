@@ -1,3 +1,7 @@
+# Notes by Pyush (Added after the fact)
+- I agree with what you brought up regarding a chat based approach. Importantly I think unifying the LLM actions as tool calls around the chat (orchestrator) would be worth considering. So the main LLM session would have context of when a questionnaire is raised, and it could also have context of the operations as tool calls (For example, you could generateAd could be a tool, with an iteration parameter etc. -- the tool call itself could call a workflow or agentic loop that creates the context for company, campaign, and performance adjustments, then sends that to the image model. The user then could ask a lot about what happened. Effectively ad generation as a subagent.)
+
+
 # Iteration
 
 A local product demo for generating an initial ad creative, applying deterministic mock performance data, and producing one performance-informed iteration.
